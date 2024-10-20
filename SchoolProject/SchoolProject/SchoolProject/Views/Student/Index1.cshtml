@@ -1,0 +1,18 @@
+﻿@model List<Student>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Status</td>
+
+    </tr>
+    @foreach (var result in Model)
+    {
+        <tr>
+            <td>@result.StudentName</td>
+            <td>@result.StudentAge</td>
+            <td>@result.StudentStatus</td>
+
+        </tr>
+    }
